@@ -17,3 +17,16 @@ response for multiple web page on same origin communication, for help transfer d
 proxy between the browser and api server, only could host on https or localhost, for help local cache with localStorage when internet is not good
 
 
+## Nodejs Concurreny
+
+for weather  need to integrate process result classify into 2 ways:
+
+### Cluster Mode
+
+That means we fork main process with seperate child process to handle the job, however, each indiviual process will not shared memory.
+
+The responsibility for main process is to dispatcher job for child process。
+
+### worker thread
+
+That means we create multiple worker_threadd from main thread. this time, worker could shared data with SharedBufferArray, or use MessageChannel。

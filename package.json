@@ -1,0 +1,15 @@
+{
+  "name": "shared_web_worker_sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "message_port_sample.js",
+  "scripts": {
+    "watch": "NODE_NO_WARNINGS=1 node --watch --"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "piscina": "^4.7.0"
+  }
+}
