@@ -1,0 +1,44 @@
+{
+  "headers": [
+    {
+      "source" : "shared-memory.html",
+      "headers" : [{
+        "key" : "Cross-Origin-Opener-Policy",
+        "value" : "same-origin"
+      }, {
+        "key" : "Cross-Origin-Embedder-Policy",
+        "value" : "require-corp"
+      }]
+    },
+    {
+      "source" : "thread-gol.html",
+      "headers" : [{
+        "key" : "Cross-Origin-Opener-Policy",
+        "value" : "same-origin"
+      }, {
+        "key" : "Cross-Origin-Embedder-Policy",
+        "value" : "require-corp"
+      }]
+    },
+    {
+      "source" : "thread-gol.js",
+      "headers" : [{
+        "key" : "Cross-Origin-Opener-Policy",
+        "value" : "same-origin"
+      }, {
+        "key" : "Cross-Origin-Embedder-Policy",
+        "value" : "require-corp"
+      }]
+    },
+    {
+      "source" : "grid.js",
+      "headers" : [{
+        "key" : "Cross-Origin-Opener-Policy",
+        "value" : "same-origin"
+      }, {
+        "key" : "Cross-Origin-Embedder-Policy",
+        "value" : "require-corp"
+      }]
+    }
+  ]
+}

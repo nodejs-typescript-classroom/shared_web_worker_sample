@@ -30,3 +30,12 @@ The responsibility for main process is to dispatcher job for child process。
 ### worker thread
 
 That means we create multiple worker_threadd from main thread. this time, worker could shared data with SharedBufferArray, or use MessageChannel。
+
+***Notice***: need to modify response header for use SharedArrayBuffer on Browser side
+
+### exec webside with enable SharedArrayBuffer
+
+```shell
+npx serve -C web
+```
+serve with read web/serve.json to setup response header
