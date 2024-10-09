@@ -39,3 +39,18 @@ That means we create multiple worker_threadd from main thread. this time, worker
 npx serve -C web
 ```
 serve with read web/serve.json to setup response header
+
+## WorkPool strategy
+
+Worker Pool 目的，最大化平行處理相同的工作
+1. roundrobin
+
+每次照循環順序，逐步分派給對應的 worker 工作
+
+2. random
+
+隨機分派給一個 worker 工作
+
+3. leastbusy
+
+分派給當下處理工作量最少的 worker 處理
