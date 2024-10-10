@@ -54,3 +54,7 @@ Worker Pool 目的，最大化平行處理相同的工作
 3. leastbusy
 
 分派給當下處理工作量最少的 worker 處理
+
+## mutex
+
+![alt text](mutex-flow.png)
