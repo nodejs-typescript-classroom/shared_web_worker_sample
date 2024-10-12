@@ -74,3 +74,32 @@ Worker Pool 目的，最大化平行處理相同的工作
 ![alt text](actor-model.png)
 ### architecture diagram
 ![alt text](actor-flow.png)
+## WebAssembly
+
+現在的 Javascript 有支援 Webassembly 執行。
+
+撰寫一個簡單的 add function 如下
+
+```wat
+(module
+  (func $add (param $a i32) (param $b i32) (result i32)
+    local.get $a
+    local.get $b
+    i32.add)
+  (export "add" (func $add))
+)
+```
+
+### 編譯成 wasm 格式
+
+```shell
+npx -p wabt wat2wasm wasm/wasm-add.wat -o wasm/add.wasm
+```
+
+### AssemblyScript
+
+透過 assembly script 可以將 Typescript 編譯成 wasm 執行檔
+
+```shell
+npx -p assemblyscript asc wasm/add_v1.ts -o wasm/add_v1.wasm
+```
