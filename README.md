@@ -66,3 +66,11 @@ Worker Pool 目的，最大化平行處理相同的工作
 環形緩衝區(ring buffer)是先進先出的一種實做。環形緩衝區是由一個固定長度的陣列實做。使用頭尾兩個指標來標記寫入與讀取的位置。每次讀取或寫入時，就各自移動尾與頭的位置到下一個位置。當移動到範圍超過陣列最後一個位置時，會從陣列開始的位置繼續，形成環狀。
 
 ![alt text](ring-buffer.png)
+
+## actor model
+
+演員模型用於處理平行運算的程式設計樣式。透過一個主要的 dispatcher 把任務發布到一個佇列類似於郵箱的概念，每演員各自從郵箱去拿取一個任務出來執行。演員是各自獨立執行任務的容器，有獨立的運算資源，彼此不相互干擾。
+### concept diagram
+![alt text](actor-model.png)
+### architecture diagram
+![alt text](actor-flow.png)
