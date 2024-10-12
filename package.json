@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "fastify": "^3.29.5",
+    "mustache": "^4.2.0",
     "piscina": "^4.7.0"
   }
 }
